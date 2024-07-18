@@ -16,7 +16,7 @@ const App: React.FC = () => {
   const [sentences, setSentences] = useState<Line[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [copiedIndex, setCopiedIndex] = useState<number | 'full' | null>(null);
-  const [useIndividualLines, setUseIndividualLines] = useState<boolean>(true);
+  const [useIndividualLines, setUseIndividualLines] = useState<boolean>(false);
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     if (event.target.files) {
